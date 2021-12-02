@@ -10,20 +10,24 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="target">
+
+<div id="chatform">
+<form id="form">
+
+    <label for="fname" >First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    
+    <label for="msg1" id="infostyle">Write your message:</label><br>
+    <textarea  name="msg1" rows="4" cols="50" id="message"></textarea><br><br>
+   
+    <button id="sendToAll" type="button" class="btn btn-primary btn-lg btn1">Client</button>
+    <button id="sendToMe" type="button" class="btn btn-primary btn-lg btn1">Neha</button> 
+
+</form>
+</div>
+<div id="target">
     
 </div>
-<form id="chatform" >
-<div class="form-floating  msg" >
-
-    <label for="floatingTextarea">Write your message here</label>
-    <textarea class="form-control" placeholder="Leave a comment here" id="message"></textarea>
-    <button id="sendToAll" type="button" class="btn btn-primary btn-lg btn1">Client</button>
-    <button id="sendToMe"type="button" class="btn btn-primary btn-lg btn1">Neha</button> 
-  </div>
-</form>
-
-  
     <script src="/socket.io/socket.io.js"></script>  
     <script src="client.js"></script>
 </body>

@@ -4,7 +4,8 @@ let socket = io.connect();
 
 // msg send to all 
 document.getElementById('sendToAll').addEventListener('click',function(){
-socket.emit('sendToAll', (document.getElementById('message').value))});
+socket.emit('sendToAll',(document.getElementById('message').value))});
+
 
 //  msg send to u 
 

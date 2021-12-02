@@ -17,7 +17,9 @@ server.listen(8080, () =>{
     counter++;
    
     socket.on('sendToAll', (message) =>{
-        io.emit("displayMessage", (message));
+        console.log(message);
+        io.emit("displayMessage",(message));
+        
     });
 
 // send msg to you only
