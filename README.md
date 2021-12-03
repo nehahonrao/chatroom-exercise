@@ -5,7 +5,12 @@
 
 ## Day 1:
 - I am following all steps given below to reach solution.
-- currently, I am not step no 12.
+- currently, I am on step no 12.
+
+## Day 2:
+- I have completed must have features.
+- now working on how to send name with message.
+
 
 
 ### Steps:
